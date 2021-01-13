@@ -80,14 +80,14 @@
   </section>
 
   <hr> 
-  <span>More Information</span>
+
+  <h2><span>More Information</span></h2>
 
   <nav>
     <ol>
-        <li><a href="#">Profil</a></li>
+        <li><a href="#">Profile</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Research</a></li>
-        <li>Steven Harris</li>
     </ol>
   </nav>
 
@@ -116,13 +116,33 @@
 
   <p>A canvas to express yourself</p>
   <canvas>
-    Canvas
+    Green Square
   </canvas>
+  <script>
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, 100, 100);
+  </script>
 
   <p>My favorite shape is a circle</p>
   <svg xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-    <circle r="2" />
+    <circle r="50" />
   </svg>
+
+  <template id="template">
+    <div>Click me</div>
+  </template>
+  <script>
+    const template = document.getElementById("template");
+
+    function clickHandler(event) {
+      alert("Clicked a div");
+    }
+    const click = template.content.firstElementChild.cloneNode(true);
+    click.addEventListener("click", clickHandler);
+    container.appendChild(click);
+  </script>
 
   <h2>Contact Me</h2>
 
@@ -160,8 +180,6 @@
     </select>
   </fieldset>
 
-  <br>
-
   <label for="os-choice">Choose Your Operating System:</label>
   <input list="os-types" id="os-choice" name="os-choice" />
 
@@ -170,15 +188,16 @@
     <option value="Mac">
     <option value="Linux">
   </datalist>
-
-  <br>
   
   <table>
     <caption>Availability</caption>
     <colgroup>
       <col>
-      <col span="2" class="Monday">
-      <col span="2" class="Tuesday">
+      <col span="5" class="Monday">
+      <col span="5" class="Tuesday">
+      <col span="5" class="Wednesday">
+      <col span="5" class="Thursday">
+      <col span="5" class="Friday">
     </colgroup>
   <tr>
       <td> </td>
@@ -199,11 +218,9 @@
     </tr>
   </table>
 
-  <br>
-
   <details>
     <summary>Contact Info</summary>
-    s5harris@ucsd.edu
+    <p>s5harris@ucsd.edu</p>
   </details>
 
   <button>
