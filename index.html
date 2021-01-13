@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html>
+
  <head>
-  <title>Sample page</title>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <link href="/styles/main.css">
  </head>
+
  <body>
-  <header>Displayed header</header>
+  <header>
+    <h1>
+      Welcome to Steven's Page!
+    </h1>
+  </header>
+
   <main>The unique content of the page. </main>
+
   <footer>Displayed footer</footer>
 
-  <h1>h1 Tag</h1>
-  <h2>h2 Tag</h2>
-  <h3>h3 Tag</h3>
-  <section>stand alone section</section>
-  <aside>aside, indirectly related</aside>
+  <h3>
+    I am studying computer science at <em>UC San Diego</em>
+  </h3>
+  <p>
+    I am interested in 
+    <ol>
+      <li><b>Software Engineering</b></li>
+      <ul>
+        <li><strong>Web Development</strong></li>
+        <li><strong>Mobile Development</strong></li>
+      </ul>
+      <li><b>Computer Vision</b>Research</li>
+    </ol>
+  </p>
+
+  <p>
+    A quote I enjoy:
+    <aside>Low-level programming is good for the programmer's soul <i>— John Carmack</i></aside>
+  </p>
+
+  <h2>
+    Projects
+  </h2>
+
+  <section>
+    <h3>Stack Visualizer</h3>
+    <p>
+      Visualize the dynamic memory allocation in 32-bit ARM with the   
+      <a href="https://harrissteven.github.io/stack-visualizer/">Stack Visualizer</a>
+      which supports basic instructions like <code>ADD</code>, <code>MOV</code>, and <code>LDR</code>
+    </p>
+  </section>
+
+  <h2>Research</h2>
+
+  <section>
+    <h3>FPGA Multitenant Security</h3>
+    <p>
+      I am interested in computer vision research and am currently part of a group at UCSD working at the intersection of hardware security and vision.
+    </p>
+  </section>
+
+  <h2>Interests</h2>
+
+  <section>
+    <ul>
+      <li>I enjoy playing the guitar in my free time</li>
+      <li>I like to run on the beach</li>
+    </ul>
+  </section>
+  
   <nav>Navigation section</nav>
   <span>generic inline container</span>
   <hr> <!-- thematic break-->
@@ -34,7 +90,6 @@
   <p>some <em>emphasized</em> text</p>
   <p>some <code>code</code> text</p>
   <pre>a pre tag</pre>
-  <a href="https://harrissteven.github.io/stack-visualizer/">Visit the stack visualizer</a>
   <p>a line <br> break</p>
 
   <img class="fit-picture"
