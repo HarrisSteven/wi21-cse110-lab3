@@ -31,11 +31,52 @@
   <p>some <b>bold</b> text</p>
   <p>some <i>idiomatic</i> text</p>
   <p>some <strong>strong</strong> text</p>
-  <p>some <emphasized>emphasized</emphasized> text</p>
+  <p>some <em>emphasized</em> text</p>
   <p>some <code>code</code> text</p>
   <pre>a pre tag</pre>
   <a href="https://harrissteven.github.io/stack-visualizer/">Visit the stack visualizer</a>
-  <pre>a line <br> break</pre>
+  <p>a line <br> break</p>
+
+  <img class="fit-picture"
+     src="/images/profile_pic.jpg"
+     alt="Profile Picture">
+
+  <picture>
+    <source srcset="/images/profile_pic.jpg"
+            media="(min-width: 800px)">
+    <img src="/images/profile_pic.jpg" alt="" />
+  </picture>
+
+  <iframe
+    title="Stack Visualizer"
+    width="300"
+    height="200"
+    src="https://harrissteven.github.io/stack-visualizer/">
+  </iframe>
+  
+  <audio
+    controls
+    src="/audio/Performance_Lesson_1.m4a">
+        Your browser does not support the
+        <code>audio</code> element.
+  </audio>
+
+  <video controls width="250">
+    <source src="/video/Geisel_Short.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+
+  <canvas width="300" height="300">
+    An alternative text describing what your canvas displays.
+  </canvas>
+
+  <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+    <circle cx="50" cy="50" r="40" />
+    <circle cx="150" cy="50" r="4" />
+  </svg>
+  
 
   <!-- this is a comment -->
  </body>
