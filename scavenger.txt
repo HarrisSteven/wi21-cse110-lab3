@@ -1,3 +1,5 @@
+Link to Github Repo: https://github.com/HarrisSteven/HTMLProfile
+Link to User Page: https://harrissteven.github.io/HTMLProfile/
 1. greenEggsAndHam
 2. iHateCplusplus
 3. HTMLRocks
@@ -10,4 +12,4 @@
 10. listenToTheBlackKeys
 11. allyComesFirst
 12. iLoveWebDev
-13. 404
+13. 404 not found
