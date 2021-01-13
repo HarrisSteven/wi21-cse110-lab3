@@ -14,221 +14,223 @@
     </h1>
   </header>
 
-  <main>The unique content of the page. </main>
+  <main>
+    <figure>
+      <img
+        src="https://harrissteven.github.io/HTMLProfile//images/profile_pic.jpg"
+        alt="Profile Picture">
+      <figcaption>Steven Harris</figcaption>
+    </figure>
 
-  <footer>Displayed footer</footer>
+    <p>
+      I am studying computer science at <em>UC San Diego</em>
+    </p>
+    <p>
+      I am interested in 
+      <ol>
+        <li><b>Software Engineering</b></li>
+        <ul>
+          <li><strong>Web Development</strong></li>
+          <li><strong>Mobile Development</strong></li>
+        </ul>
+        <li><b>Computer Vision</b> Research</li>
+      </ol>
+    </p>
 
-  <figure>
-    <img class="fit-picture"
-      src="/images/profile_pic.jpg"
-      alt="Profile Picture">
-    <figcaption>caption for the figure</figcaption>
-  </figure>
+    <p>
+      A quote I enjoy:
+      <aside>Low-level programming is good for the programmer's soul <i>— John Carmack</i></aside>
+    </p>
 
-  <p>
-    I am studying computer science at <em>UC San Diego</em>
-  </p>
-  <p>
-    I am interested in 
-    <ol>
-      <li><b>Software Engineering</b></li>
+    <h2>
+      Projects
+    </h2>
+
+    <section>
+      <h3>Stack Visualizer</h3>
+      <p>
+        Visualize the dynamic memory allocation in 32-bit ARM with the   
+        <a href="https://harrissteven.github.io/stack-visualizer/">Stack Visualizer</a>
+        which supports basic instructions like <code>ADD</code>, <code>MOV</code>, and <code>LDR</code>
+      </p>
+      <iframe
+        src="https://harrissteven.github.io/stack-visualizer/">
+      </iframe>
+    </section>
+
+    <h2>Research</h2>
+
+    <section>
+      <h3>FPGA Multitenant Security</h3>
+      <p>
+        I am interested in computer vision research and am currently part of a group at UCSD working at the intersection of hardware security and vision.
+      </p>
+    </section>
+
+    <h2>Interests</h2>
+
+    <section>
       <ul>
-        <li><strong>Web Development</strong></li>
-        <li><strong>Mobile Development</strong></li>
+        <li>I enjoy playing the guitar in my free time</li>
+        <li>I like to run on the beach</li>
       </ul>
-      <li><b>Computer Vision</b> Research</li>
-    </ol>
-  </p>
+    </section>
 
-  <p>
-    A quote I enjoy:
-    <aside>Low-level programming is good for the programmer's soul <i>— John Carmack</i></aside>
-  </p>
+    <hr> 
 
-  <h2>
-    Projects
-  </h2>
+    <h2><span>More Information</span></h2>
 
-  <section>
-    <h3>Stack Visualizer</h3>
-    <p>
-      Visualize the dynamic memory allocation in 32-bit ARM with the   
-      <a href="https://harrissteven.github.io/stack-visualizer/">Stack Visualizer</a>
-      which supports basic instructions like <code>ADD</code>, <code>MOV</code>, and <code>LDR</code>
-    </p>
-    <iframe
-      src="https://harrissteven.github.io/stack-visualizer/">
-    </iframe>
-  </section>
+    <nav>
+      <ol>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Research</a></li>
+      </ol>
+    </nav>
 
-  <h2>Research</h2>
+    <pre>Student ID Picture <br> </pre>
 
-  <section>
-    <h3>FPGA Multitenant Security</h3>
-    <p>
-      I am interested in computer vision research and am currently part of a group at UCSD working at the intersection of hardware security and vision.
-    </p>
-  </section>
+    <picture>
+      <source srcset="/images/studentid2.jpg"
+              media="(min-width: 800px)">
+      <img src="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg" alt="" />
+    </picture>
 
-  <h2>Interests</h2>
+    <p>Here is some audio from music class</p>
+    <audio
+      controls
+      src="https://harrissteven.github.io/HTMLProfile/audio/Performance_Lesson_1.m4a">
+          Your browser does not support the
+          <code>audio</code> element.
+    </audio>
 
-  <section>
-    <ul>
-      <li>I enjoy playing the guitar in my free time</li>
-      <li>I like to run on the beach</li>
-    </ul>
-  </section>
+    <p>A short video of Geisel Library</p>
+    <video controls width="250">
+      <source src="https://harrissteven.github.io/HTMLProfile/video/Geisel_Short.mp4"
+              type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
 
-  <hr> 
+    <p>I'm a fan of cubism</p>
+    <canvas>
+      Green Square
+    </canvas>
+    <script>
+      const canvas = document.querySelector('canvas');
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = 'green';
+      ctx.fillRect(10, 10, 100, 100);
+    </script>
 
-  <h2><span>More Information</span></h2>
+    <p>My favorite shape is a circle</p>
+    <svg xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+      <circle cx="50" cy="50" r="50" />
+    </svg>
 
-  <nav>
-    <ol>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Research</a></li>
-    </ol>
-  </nav>
+    <template id="template">
+      <p>Click me</p>
+    </template>
+    <script>
+      const template = document.getElementById("template");
 
-  <pre>Student ID Picture <br> </pre>
+      function clickHandler(event) {
+        alert("Clicked a div");
+      }
+      const click = template.content.firstElementChild.cloneNode(true);
+      click.addEventListener("click", clickHandler);
+      container.appendChild(click);
+    </script>
 
-  <picture>
-    <source srcset="/images/studentid2.jpg"
-            media="(min-width: 800px)">
-    <img src="/images/studentid2.jpg" alt="" />
-  </picture>
+    <h2>Contact Me</h2>
 
-  <p>Here is some audio from music class</p>
-  <audio
-    controls
-    src="/audio/Performance_Lesson_1.m4a">
-        Your browser does not support the
-        <code>audio</code> element.
-  </audio>
+    <form>
+      <div>
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div>
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <p>What's on your mind?</p>
+        <textarea></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Send">
+      </div>
+    </form>
+    
+    <h2>About You</h2>
 
-  <p>A short video of Geisel Library</p>
-  <video controls width="250">
-    <source src="/video/Geisel_Short.mp4"
-            type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-  </video>
+    <p>What is your major?</p>
+    <fieldset>
+      <legend>Choose your major</legend>
+      <select>
+        <optgroup label="CSE">
+            <option>Computer Science</option>
+            <option>Computer Engineering</option>
+        </optgroup>
+        <optgroup label="MATH">
+            <option>Math-CS</option>
+            <option>Math</option>
+        </optgroup>
+      </select>
+    </fieldset>
 
-  <p>I'm a fan of cubism</p>
-  <canvas>
-    Green Square
-  </canvas>
-  <script>
-    const canvas = document.querySelector('canvas');
-    const ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'green';
-    ctx.fillRect(10, 10, 100, 100);
-  </script>
+    <p>What Operating System do you use?</p>
+    <label for="os-choice">Choose Your Operating System:</label>
+    <input list="os-types" id="os-choice" name="os-choice" />
 
-  <p>My favorite shape is a circle</p>
-  <svg xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-    <circle cx="50" cy="50" r="50" />
-  </svg>
-
-  <template id="template">
-    <p>Click me</p>
-  </template>
-  <script>
-    const template = document.getElementById("template");
-
-    function clickHandler(event) {
-      alert("Clicked a div");
-    }
-    const click = template.content.firstElementChild.cloneNode(true);
-    click.addEventListener("click", clickHandler);
-    container.appendChild(click);
-  </script>
-
-  <h2>Contact Me</h2>
-
-  <form>
-    <div>
-      <label for="name">Enter your name: </label>
-      <input type="text" name="name" id="name" required>
-    </div>
-    <div>
-      <label for="email">Enter your email: </label>
-      <input type="email" name="email" id="email" required>
-    </div>
-    <div>
-      <p>What's on your mind?</p>
-      <textarea></textarea>
-    </div>
-    <div>
-      <input type="submit" value="Send">
-    </div>
-  </form>
-  
-  <h2>About You</h2>
-
-  <p>What is your major?</p>
-  <fieldset>
-    <legend>Choose your major</legend>
-    <select>
-      <optgroup label="CSE">
-          <option>Computer Science</option>
-          <option>Computer Engineering</option>
-      </optgroup>
-      <optgroup label="MATH">
-          <option>Math-CS</option>
-          <option>Math</option>
-      </optgroup>
-    </select>
-  </fieldset>
-
-  <p>What Operating System do you use?</p>
-  <label for="os-choice">Choose Your Operating System:</label>
-  <input list="os-types" id="os-choice" name="os-choice" />
-
-  <datalist id="os-types">
-    <option value="Windows">
-    <option value="Mac">
-    <option value="Linux">
-  </datalist>
-  
-  <p>Contact me inside my available times</p>
-  <table>
-    <caption>Availability</caption>
-    <colgroup>
-      <col>
-      <col span="5" class="Monday">
-      <col span="5" class="Tuesday">
-      <col span="5" class="Wednesday">
-      <col span="5" class="Thursday">
-      <col span="5" class="Friday">
-    </colgroup>
-  <tr>
-      <td> </td>
-      <th scope="col">Monday</th>
-      <th scope="col">Tuesday</th>
-      <th scope="col">Wednesday</th>
-      <th scope="col">Thursday</th>
-      <th scope="col">Friday</th>
-
-    </tr>
+    <datalist id="os-types">
+      <option value="Windows">
+      <option value="Mac">
+      <option value="Linux">
+    </datalist>
+    
+    <p>Contact me inside my available times</p>
+    <table>
+      <caption>Availability</caption>
+      <colgroup>
+        <col>
+        <col span="5" class="Monday">
+        <col span="5" class="Tuesday">
+        <col span="5" class="Wednesday">
+        <col span="5" class="Thursday">
+        <col span="5" class="Friday">
+      </colgroup>
     <tr>
-      <th scope="row">Hours Free</th>
-      <td>8am-9am</td>
-      <td>10am-11:30am</td>
-      <td>5pm-7pm</td>
-      <td>2pm-4pm</td>
-      <td>8am-9am</td>
-    </tr>
-  </table>
+        <td> </td>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
 
-  <details>
-    <summary><p>Contact Info</p></summary>
-    <p>s5harris@ucsd.edu</p>
-  </details>
+      </tr>
+      <tr>
+        <th scope="row">Hours Free</th>
+        <td>8am-9am</td>
+        <td>10am-11:30am</td>
+        <td>5pm-7pm</td>
+        <td>2pm-4pm</td>
+        <td>8am-9am</td>
+      </tr>
+    </table>
 
-  <button>
-    Contact
-  </button>
+    <details>
+      <summary><p>Contact Info</p></summary>
+      <p>s5harris@ucsd.edu</p>
+    </details>
+
+    <button>
+      Contact
+    </button>
+  </main>
+
+  <footer>
+    <p>Hosted by Github Pages</p>
+  </footer>
 
  </body>
 </html>
