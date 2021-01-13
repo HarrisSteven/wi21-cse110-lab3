@@ -100,7 +100,8 @@
 
     <picture>
       <source srcset="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg"
-              media="(max-width: 600px)">
+              media="(min-width: 600px)"
+              width=600>
       <img src="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg" alt="" />
     </picture>
 
@@ -138,6 +139,34 @@
       <div>
         <label for="email">Enter your email: </label>
         <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="checkbox">Attends UCSD?: </label>
+        <input type="checkbox" name="checkbox" id="checkbox" required>
+      </div>
+      <div>
+        <label for="radio">Unemployed: </label>
+        <input type="radio" name="radio" id="radio" required>
+      </div>
+      <div>
+        <label for="tel">Phone Number: </label>
+        <input type="tel" name="tel" id="tel" required>
+      </div>
+      <div>
+        <label for="number">Number of Years of SE Experience: </label>
+        <input type="number" name="number" id="number" required>
+      </div>
+      <div>
+        <label for="url">Personal Website: </label>
+        <input type="url" name="url" id="url" required>
+      </div>
+      <div>
+        <label for="password">Discount Code: </label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <div>
+        <label for="date">Today's Date: </label>
+        <input type="date" name="date" id="date" required>
       </div>
       <div>
         <p>What's on your mind?</p>
@@ -223,7 +252,7 @@
         document.body.appendChild(clone);
       }
     </script>
-    
+
   </main>
 
   <footer>
