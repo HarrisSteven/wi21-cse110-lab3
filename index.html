@@ -18,6 +18,13 @@
 
   <footer>Displayed footer</footer>
 
+  <figure>
+    <img class="fit-picture"
+      src="/images/profile_pic.jpg"
+      alt="Profile Picture">
+    <figcaption>caption for the figure</figcaption>
+  </figure>
+
   <h3>
     I am studying computer science at <em>UC San Diego</em>
   </h3>
@@ -29,7 +36,7 @@
         <li><strong>Web Development</strong></li>
         <li><strong>Mobile Development</strong></li>
       </ul>
-      <li><b>Computer Vision</b>Research</li>
+      <li><b>Computer Vision</b> Research</li>
     </ol>
   </p>
 
@@ -49,6 +56,9 @@
       <a href="https://harrissteven.github.io/stack-visualizer/">Stack Visualizer</a>
       which supports basic instructions like <code>ADD</code>, <code>MOV</code>, and <code>LDR</code>
     </p>
+    <iframe
+      src="https://harrissteven.github.io/stack-visualizer/">
+    </iframe>
   </section>
 
   <h2>Research</h2>
@@ -68,47 +78,27 @@
       <li>I like to run on the beach</li>
     </ul>
   </section>
-  
-  <nav>Navigation section</nav>
-  <span>generic inline container</span>
-  <hr> <!-- thematic break-->
-  <p>Paragraph</p>
-  <ul>
-    <li>unordered list item 1</li>
-    <li>unordered list item 2</li>
-  </ul>
-  <ol>
-    <li>ordered list item 1</li>
-    <li>ordered list item 2</li>
-  </ul>
-  <figure>
-    <figcaption>caption for the figure</figcaption>
-  </figure>
-  <p>some <b>bold</b> text</p>
-  <p>some <i>idiomatic</i> text</p>
-  <p>some <strong>strong</strong> text</p>
-  <p>some <em>emphasized</em> text</p>
-  <p>some <code>code</code> text</p>
-  <pre>a pre tag</pre>
-  <p>a line <br> break</p>
 
-  <img class="fit-picture"
-     src="/images/profile_pic.jpg"
-     alt="Profile Picture">
+  <hr> 
+  <span>More Information</span>
+
+  <nav>
+    <ol>
+        <li><a href="#">UCSD</a></li>
+        <li><a href="#">Students</a></li>
+        <li>Steven Harris</li>
+    </ol>
+  </nav>
+
+  <pre>Student ID Picture <br> </pre>
 
   <picture>
-    <source srcset="/images/profile_pic.jpg"
+    <source srcset="/images/studentid2.jpg"
             media="(min-width: 800px)">
-    <img src="/images/profile_pic.jpg" alt="" />
+    <img src="/images/studentid2.jpg" alt="" />
   </picture>
 
-  <iframe
-    title="Stack Visualizer"
-    width="300"
-    height="200"
-    src="https://harrissteven.github.io/stack-visualizer/">
-  </iframe>
-  
+  <p>Here is some audio from music class</p>
   <audio
     controls
     src="/audio/Performance_Lesson_1.m4a">
@@ -116,30 +106,37 @@
         <code>audio</code> element.
   </audio>
 
+  <p>A short video of Geisel Library</p>
   <video controls width="250">
     <source src="/video/Geisel_Short.mp4"
             type="video/mp4">
-
     Sorry, your browser doesn't support embedded videos.
   </video>
 
+  <p>A canvas to express yourself</p>
   <canvas width="300" height="300">
     An alternative text describing what your canvas displays.
   </canvas>
 
+  <p>My favorite shape is a circle</p>
   <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-    <circle cx="50" cy="50" r="40" />
-    <circle cx="150" cy="50" r="4" />
+    <circle cx="150" cy="50" r="2" />
   </svg>
+
+  <h2>Contact Me</h2>
 
   <form>
     <div>
       <label for="name">Enter your name: </label>
       <input type="text" name="name" id="name" required>
     </div>
-    <div >
+    <div>
       <label for="email">Enter your email: </label>
       <input type="email" name="email" id="email" required>
+    </div>
+    <div>
+      <caption>What's on your mind?</caption>
+      <textarea></textarea>
     </div>
     <div>
       <input type="submit" value="Subscribe!">
@@ -147,31 +144,26 @@
   </form>
   
   <fieldset>
-    <legend>Choose your favorite dino</legend>
-    <select id="dino-select">
-      <optgroup label="Theropods">
-          <option>Tyrannosaurus</option>
-          <option>Velociraptor</option>
-          <option>Deinonychus</option>
+    <legend>Choose your major</legend>
+    <select>
+      <optgroup label="CSE">
+          <option>Computer Science</option>
+          <option>Computer Engineering</option>
       </optgroup>
-      <optgroup label="Sauropods">
-          <option>Diplodocus</option>
-          <option>Saltasaurus</option>
-          <option>Apatosaurus</option>
+      <optgroup label="MATH">
+          <option>Math-CS</option>
+          <option>Math</option>
       </optgroup>
     </select>
   </fieldset>
 
-  <textarea list="ice-cream-flavors">
-    It was a dark and stormy night...
-  </textarea>
+  <label for="os-choice">Choose a flavor:</label>
+  <input list="os-types" id="os-choice" name="os-choice" />
 
-  <datalist id="ice-cream-flavors">
-    <option value="Chocolate">
-    <option value="Coconut">
-    <option value="Mint">
-    <option value="Strawberry">
-    <option value="Vanilla">
+  <datalist id="os-types">
+    <option value="Windows">
+    <option value="Mac">
+    <option value="Linux">
   </datalist>
   
   <table>
