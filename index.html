@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
  <head>
   <title>Profile</title>
   <meta charset="utf-8">
-  <link href="/styles/main.css">
+  <link href="/styles/main.css" rel="external">
  </head>
 
  <body>
@@ -26,22 +26,24 @@
     <p>
       I am studying computer science at <em>UC San Diego</em>
     </p>
+
     <p>
       I am interested in 
-      <ol>
-        <li><b>Software Engineering</b></li>
+    </p>
+    <ol>
+      <li><b>Software Engineering</b></li>
+      <li>
         <ul>
           <li><strong>Web Development</strong></li>
           <li><strong>Mobile Development</strong></li>
         </ul>
-        <li><b>Computer Vision</b> Research</li>
-      </ol>
-    </p>
+      </li>
+      <li><b>Computer Vision</b> Research</li>
+    </ol>
 
-    <p>
-      A quote I enjoy:
-      <aside>Low-level programming is good for the programmer's soul <i>— John Carmack</i></aside>
-    </p>
+    <aside>
+      <p>Low-level programming is good for the programmer's soul <i>— John Carmack</i></aside>
+    </aside>
 
     <h2>
       Projects
@@ -100,9 +102,8 @@
 
     <picture>
       <source srcset="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg"
-              media="(min-width: 600px)"
-              width=600>
-      <img src="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg" alt="" width=600/>
+              media="(min-width: 600px)">
+      <img src="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg" alt="" width="600"/>
     </picture>
 
     <p>Here is some audio from music class</p>
@@ -208,21 +209,20 @@
     <table>
       <caption>Availability</caption>
       <colgroup>
-        <col>
+        <col span="5" class="Week Days">
         <col span="5" class="Monday">
         <col span="5" class="Tuesday">
         <col span="5" class="Wednesday">
         <col span="5" class="Thursday">
         <col span="5" class="Friday">
       </colgroup>
-    <tr>
-        <td> </td>
+      <tr>
+        <th scope="col">Week Days</th>
         <th scope="col">Monday</th>
         <th scope="col">Tuesday</th>
         <th scope="col">Wednesday</th>
         <th scope="col">Thursday</th>
         <th scope="col">Friday</th>
-
       </tr>
       <tr>
         <th scope="row">Hours Free</th>
