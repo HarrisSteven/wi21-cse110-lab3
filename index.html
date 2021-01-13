@@ -25,9 +25,9 @@
     <figcaption>caption for the figure</figcaption>
   </figure>
 
-  <h3>
+  <p>
     I am studying computer science at <em>UC San Diego</em>
-  </h3>
+  </p>
   <p>
     I am interested in 
     <ol>
@@ -84,8 +84,9 @@
 
   <nav>
     <ol>
-        <li><a href="#">UCSD</a></li>
-        <li><a href="#">Students</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Research</a></li>
         <li>Steven Harris</li>
     </ol>
   </nav>
@@ -114,13 +115,13 @@
   </video>
 
   <p>A canvas to express yourself</p>
-  <canvas width="300" height="300">
-    An alternative text describing what your canvas displays.
+  <canvas>
+    Canvas
   </canvas>
 
   <p>My favorite shape is a circle</p>
-  <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
-    <circle cx="150" cy="50" r="2" />
+  <svg xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+    <circle r="2" />
   </svg>
 
   <h2>Contact Me</h2>
@@ -135,14 +136,16 @@
       <input type="email" name="email" id="email" required>
     </div>
     <div>
-      <caption>What's on your mind?</caption>
+      <p>What's on your mind?</p>
       <textarea></textarea>
     </div>
     <div>
-      <input type="submit" value="Subscribe!">
+      <input type="submit" value="Send">
     </div>
   </form>
   
+  <h2>About You</h2>
+
   <fieldset>
     <legend>Choose your major</legend>
     <select>
@@ -157,7 +160,9 @@
     </select>
   </fieldset>
 
-  <label for="os-choice">Choose a flavor:</label>
+  <br>
+
+  <label for="os-choice">Choose Your Operating System:</label>
   <input list="os-types" id="os-choice" name="os-choice" />
 
   <datalist id="os-types">
@@ -165,43 +170,44 @@
     <option value="Mac">
     <option value="Linux">
   </datalist>
+
+  <br>
   
   <table>
-    <caption>He-Man and Skeletor facts</caption>
+    <caption>Availability</caption>
     <colgroup>
       <col>
-      <col span="2" class="batman">
-      <col span="2" class="flash">
+      <col span="2" class="Monday">
+      <col span="2" class="Tuesday">
     </colgroup>
-    <tr>
-        <td> </td>
-        <th scope="col">He-Man</th>
-        <th scope="col">Skeletor</th>
+  <tr>
+      <td> </td>
+      <th scope="col">Monday</th>
+      <th scope="col">Tuesday</th>
+      <th scope="col">Wednesday</th>
+      <th scope="col">Thursday</th>
+      <th scope="col">Friday</th>
+
     </tr>
     <tr>
-        <th scope="row">Role</th>
-        <td>Hero</td>
-        <td>Villain</td>
-    </tr>
-    <tr>
-        <th scope="row">Weapon</th>
-        <td>Power Sword</td>
-        <td>Havoc Staff</td>
-    </tr>
-    <tr>
-        <th scope="row">Dark secret</th>
-        <td>Expert florist</td>
-        <td>Cries at romcoms</td>
+      <th scope="row">Hours Free</th>
+      <td>8am-9am</td>
+      <td>10am-11:30am</td>
+      <td>5pm-7pm</td>
+      <td>2pm-4pm</td>
+      <td>8am-9am</td>
     </tr>
   </table>
 
+  <br>
+
   <details>
-    <summary>Details</summary>
-    Something small enough to escape casual notice.
+    <summary>Contact Info</summary>
+    s5harris@ucsd.edu
   </details>
 
   <button>
-    Add to favorites
+    Contact
   </button>
 
  </body>
