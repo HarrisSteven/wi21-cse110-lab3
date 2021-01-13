@@ -19,7 +19,7 @@
       <img
         src="https://harrissteven.github.io/HTMLProfile/images/profile_pic.jpg"
         alt="Profile Picture"
-        width="1000">
+        width="600">
       <figcaption>Steven Harris</figcaption>
     </figure>
 
@@ -77,6 +77,13 @@
       </ul>
     </section>
 
+    <p>A short video of the beach</p>
+    <video controls width="1000">
+      <source src="https://harrissteven.github.io/HTMLProfile/video/Geisel_Short.mp4"
+              type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+
     <hr> 
 
     <h2><span>More Information</span></h2>
@@ -93,7 +100,7 @@
 
     <picture>
       <source srcset="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg"
-              media="(min-width: 800px)">
+              media="(max-width: 600px)">
       <img src="https://harrissteven.github.io/HTMLProfile/images/studentid2.jpg" alt="" />
     </picture>
 
@@ -104,13 +111,6 @@
           Your browser does not support the
           <code>audio</code> element.
     </audio>
-
-    <p>A short video of Geisel Library</p>
-    <video controls width="1000">
-      <source src="https://harrissteven.github.io/HTMLProfile/video/Geisel_Short.mp4"
-              type="video/mp4">
-      Sorry, your browser doesn't support embedded videos.
-    </video>
 
     <p>I'm a fan of cubism</p>
     <canvas>
@@ -127,20 +127,6 @@
     <svg xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
       <circle cx="50" cy="50" r="50" />
     </svg>
-
-    <template id="template">
-      <p>Click me</p>
-    </template>
-    <script>
-      const template = document.getElementById("template");
-
-      function clickHandler(event) {
-        alert("Clicked a div");
-      }
-      const click = template.content.firstElementChild.cloneNode(true);
-      click.addEventListener("click", clickHandler);
-      container.appendChild(click);
-    </script>
 
     <h2>Contact Me</h2>
 
@@ -223,10 +209,21 @@
       <summary>Contact Info</summary>
       <p>s5harris@ucsd.edu</p>
     </details>
+    
+    <button onclick="showContent()">Contact</button>
 
-    <button>
-      Contact
-    </button>
+    <template>
+      <h2>Thank You!</h2>
+    </template>
+    
+    <script>
+      function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clone = temp.content.cloneNode(true);
+        document.body.appendChild(clone);
+      }
+    </script>
+    
   </main>
 
   <footer>
