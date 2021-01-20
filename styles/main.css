@@ -4,6 +4,40 @@ header {
   margin-right: 10px;
   margin-left: 10px;
   text-align: center;
+  color:DodgerBlue; /* Set text color to DodgerBlue */
+}
+
+h2 {
+  color: rgb(255, 82, 64);
+}
+
+h3 {
+  color: #3cb371;
+}
+
+form {
+  border-style: solid;
+  border-radius: 2%;
+  border-color:hsl(248, 53%, 58%);
+  border-width: 3px;
+  padding: 10px;
+}
+
+footer {
+  color: hsl(248, 53%, 58%);
+}
+
+details {
+  color: hsla(9, 100%, 64%, 0.8);
+}
+
+#quote {
+  color: #53D;
+}
+
+code {
+  color: rgb(121, 106, 255, 0.8);
+  background-color:hsla(40, 100%, 64%, 0.2);
 }
 
 main {
