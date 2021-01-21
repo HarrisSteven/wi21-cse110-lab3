@@ -8,6 +8,35 @@ header {
   position: relative;
 }
 
+#grid {
+  display: grid;
+  grid-template-columns: 170px 170px 250px;
+  grid-template-rows: 60px 60px 60px; 
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  figcaption {text-align: center;}
+}
+
+a:active {
+  background-color: yellow;
+}
+
+a:hover {
+  color: lightblue;
+}
+
 h2 {
   color: rgb(255, 82, 64);
   text-decoration: underline;
