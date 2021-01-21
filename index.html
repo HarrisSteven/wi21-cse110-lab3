@@ -5,6 +5,13 @@
   <title>Profile</title>
   <meta charset="utf-8">
   <link href="./styles/main.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    * {
+      font-family: 'Roboto', sans-serif;
+      src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+    }
+  </style>
  </head>
 
  <body>
@@ -58,6 +65,7 @@
         which supports basic instructions like <code>ADD</code>, <code>MOV</code>, and <code>LDR</code>
       </p>
       <iframe
+        style="height:500px;"
         class='center'
         src="https://harrissteven.github.io/stack-visualizer/">
       </iframe>
@@ -81,7 +89,7 @@
       </ul>
     </section>
 
-    <p>A short video of the beach</p>
+    <p id="inline">A short video of the beach</p>
     <video controls class='center'>
       <source 
         src="https://harrissteven.github.io/HTMLProfile/video/Geisel_Short.mp4"
