@@ -5,22 +5,59 @@ header {
   margin-left: 10px;
   text-align: center;
   color:DodgerBlue; /* Set text color to DodgerBlue */
+  position: relative;
 }
 
 h2 {
   color: rgb(255, 82, 64);
+  text-decoration: underline;
 }
 
 h3 {
   color: #3cb371;
+  text-decoration: underline;
 }
 
 form {
   border-style: solid;
-  border-radius: 2%;
+  border-radius: 5px;
   border-color:hsl(248, 53%, 58%);
   border-width: 3px;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 50%;
+  max-height: 80%;
+  min-width: 40%;
+  min-height: 50%;
+}
+
+#inline {
+  display: inline;
+}
+
+svg {
+  position: sticky;
+  top: 0;
+}
+
+table {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid;
+  border-radius: 5px;
+}
+
+td {
+  text-align: center;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+th {
+  text-align: center;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 footer {
@@ -48,6 +85,6 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 50%;
 }
 
