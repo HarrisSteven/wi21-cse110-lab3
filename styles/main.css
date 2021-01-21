@@ -1,4 +1,4 @@
-header {
+header[target] {
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -77,19 +77,29 @@ table {
   border-radius: 5px;
 }
 
-td {
+td, th {
   text-align: center;
   padding-right: 5px;
   padding-bottom: 5px;
 }
 
-th {
+details summary {
   text-align: center;
-  padding-right: 5px;
-  padding-bottom: 5px;
 }
 
-footer {
+optgroup > option {
+  background-color: lightcoral;
+}
+
+div + h2 {
+  background-color: lightgoldenrodyellow;
+}
+
+th + td {
+  background-color: lightskyblue;
+}
+
+footer.foot {
   color: hsl(248, 53%, 58%);
 }
 
